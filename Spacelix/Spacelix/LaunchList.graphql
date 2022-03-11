@@ -1,0 +1,10 @@
+query LaunchList($Offset: Int, $Limit: Int) {
+    launches(offset: $Offset,limit: $Limit) {
+        details
+        mission_name
+        links {
+            video_link
+        }
+        id
+  }
+}
